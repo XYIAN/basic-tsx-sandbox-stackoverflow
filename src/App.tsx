@@ -1,10 +1,16 @@
 import "./App.css";
-import { Dashboard } from "./components/dashboardExample";
-
 function App() {
   return (
     <div className="App">
-      <Dashboard />
+      <h1>example inline style</h1>
+      <hr
+        style={{
+          margin: "2rem",
+          width: "100%",
+          color: "white",
+          border: "1px solid white",
+        }}
+      />
     </div>
   );
 }
