@@ -1,4 +1,4 @@
-function moveLastItem(sourceArray: any[], destinationArray: any[]): void {
+export function moveLastItem(sourceArray: any[], destinationArray: any[]): void {
   if (sourceArray.length === 0) {
     console.warn("Source array is empty.");
     return;

@@ -1,16 +1,10 @@
 import "./App.css";
+import { CreateCocktail } from "../src/components/drinkMixer/CreateCocktail";
+import CarList from "./components/hookForm/CarList";
 function App() {
   return (
     <div className="App">
-      <h1>example inline style</h1>
-      <hr
-        style={{
-          margin: "2rem",
-          width: "100%",
-          color: "white",
-          border: "1px solid white",
-        }}
-      />
+      <CarList />
     </div>
   );
 }
