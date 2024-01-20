@@ -9,7 +9,7 @@ export default function CarList() {
 
   const defaultBrandId = 5; // 'Other'
   const [showBrandInput, setShowBrandInput] = useState<boolean>(true);
-  const { register, handleSubmit, setValue, getValues, watch } = useForm<Car>({
+  const { register, handleSubmit, getValues, watch } = useForm<Car>({
     defaultValues: { brandId: 5 },
   });
   const CurrentBrandID = watch("brandId");
@@ -28,6 +28,7 @@ export default function CarList() {
 
   useEffect(() => {
     setShowBrandInput(+getValues().brandId === +defaultBrandId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [CurrentBrandID]);
   return (
     <>
